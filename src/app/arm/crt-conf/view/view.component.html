@@ -1,0 +1,51 @@
+<div style="display: flex;justify-content: left;align-items: center">
+  <div (click)="navigateMain()"
+       style="cursor:pointer;background-color: rgba(0,0,0,0.07); display: flex;justify-content: center;align-items: center;border-radius: 50px;width: 42px;height: 42px">
+    <img style="width: 100%;height: 100%" src="https://www.svgrepo.com/show/305142/arrow-ios-back.svg">
+  </div>
+
+  <h1 style="margin-top: 0px;margin-left: 10px;margin-bottom: 0px">
+    Редактирование доверенного лица
+  </h1>
+</div>
+
+<form *ngFor="let item of object | async as list">
+  <div class="label">Фамилия:</div>
+  <input type="text" id="surname" value="{{item.surname}}">
+
+  <div class="label">Имя:</div>
+  <input type="text" id="name" value="{{item.name}}">
+
+  <div class="label">Отчество:</div>
+  <input type="text" id="patronymic" value="{{item.patronymic}}">
+
+  <div class="label">Номер доверенности лица:</div>
+  <input type="number" id="numberConfidant" value="{{item.numberConfidant}}">
+
+  <div class="label">Дата доверенности:</div>
+  <input type="date" id="confidant" value="{{item.confidant}}">
+
+  <div class="label">Серия паспорта:</div>
+  <input type="number" id="seriaPassport" value="{{item.seriaPassport}}">
+
+  <div class="label">Номер паспорта:</div>
+  <input type="number" id="numberPassport" value="{{item.numberPassport}}">
+
+  <div class="label">Дата выдачи:</div>
+  <input type="date" id="dataOutput" value="{{item.dataOutput}}">
+
+  <div class="label">Кем выдан:</div>
+  <input type="text" id="whoOutput" value="{{item.whoOutput}}">
+
+  <div class="create" style="display: flex;justify-content: space-between;align-items: center">
+    <div>
+      <button type="submit">Редактировать</button>
+      <button style="background-color: #000;margin-left: 10px">Удалить</button>
+    </div>
+    <div>
+      <button><<</button>
+      <button>Добавить</button>
+      <button>>></button>
+    </div>
+  </div>
+</form>

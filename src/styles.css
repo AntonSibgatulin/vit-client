@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('assets/sf-pro-text-11.woff') format('woff');
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: 'SF Pro Text', Arial, sans-serif;
+
+}
+

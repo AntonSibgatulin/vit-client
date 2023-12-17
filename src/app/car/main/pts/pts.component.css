@@ -1,0 +1,35 @@
+.label {
+  margin-top: 20px;
+  display: inline-block;
+  width: calc(25% - 20px);
+  margin-left: 15px;
+}
+
+input {
+  width: calc(25% - 20px);
+  height: 32px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.create {
+  margin-top: 40px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+}
+
+select {
+  width: calc(25% - 12px);
+  height: 32px;
+  display: inline-block;
+}

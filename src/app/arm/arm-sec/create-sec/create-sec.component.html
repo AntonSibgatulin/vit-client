@@ -1,0 +1,53 @@
+<div style="display: flex;justify-content: left;align-items: center">
+  <div (click)="navigateMain()"
+       style=" cursor:pointer;background-color: rgba(0,0,0,0.07); display: flex;justify-content: center;align-items: center;border-radius: 50px;width: 42px;height: 42px">
+    <img style="width: 100%;height: 100%" src="https://www.svgrepo.com/show/305142/arrow-ios-back.svg">
+  </div>
+
+  <h1 style="margin-top: 0px;margin-left: 10px;margin-bottom: 0px">
+    Регистрация поставщика
+  </h1>
+</div>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="label">Название организации:</div>
+  <input type="text" formControlName="name">
+
+  <div class="label">Банк:</div>
+  <select formControlName="bank" style="margin-top:5px">
+    <option *ngFor="let item of bank | async as list"
+            [value]="item.name">{{ item.name }}</option>
+  </select>
+
+
+  <div class="label">Местоположение:</div>
+  <select formControlName="location" style="margin-top:5px">
+    <option *ngFor="let itemLocation of location | async as list"
+            [value]="itemLocation.location">{{ itemLocation.location }}</option>
+  </select>
+
+  <div class="label">ИНН:</div>
+  <input type="text" formControlName="inn">
+
+
+  <div class="label">Форма собственности:</div>
+  <select formControlName="typeOfOwner" style="margin-top:5px">
+    <option *ngFor="let item of typeOfOwner | async as list"
+            [value]="item.typeOfOwnerShip">{{ item.typeOfOwnerShip }}</option>
+  </select>
+
+  <div class="label">КПП:</div>
+  <input type="text" formControlName="kpp">
+
+
+  <div class="label">Кореспондентский счет:</div>
+  <input type="text" formControlName="kscore">
+
+  <div class="label">Расчетный счет:</div>
+  <input type="text" formControlName="rscore">
+
+  <div class="create">
+    <button type="submit">Создать</button>
+  </div>
+</form>
+

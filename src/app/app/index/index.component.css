@@ -1,0 +1,45 @@
+.container {
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  height: 700px;
+  margin: 70px auto;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  padding: 20px;
+}
+
+
+.button-blue {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  border-radius: 15px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 550;
+  outline: none;
+  border: none;
+}
+
+.button-empty {
+  margin-top: 200px;
+
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 550;
+  outline: none;
+
+}
