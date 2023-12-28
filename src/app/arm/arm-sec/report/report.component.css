@@ -1,0 +1,42 @@
+.container {
+  width: 770px;
+  min-height: 1000px;
+  background-color: white;
+  border-radius: 2px;
+  position: absolute;
+  margin-left: calc(50% - 440px);
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  padding: 20px;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  font-size: 24px;
+  font-width: 600;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+
+  height: 48px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: white;
+  height: 44px;
+
+}

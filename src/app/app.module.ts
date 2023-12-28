@@ -22,6 +22,9 @@ import {AgreementComponent} from "./car/main/agreement/agreement.component";
 import {ActComponent} from "./car/main/act/act.component";
 import {CarComponent} from "./car/main/car/car.component";
 import {PaymentComponent} from "./car/main/payment/payment.component";
+import {Diagram1Component} from "./diagram/diagram1/diagram1.component";
+import {ReportComponent} from "./arm/arm-sec/report/report.component";
+import {ViewViewComponent} from "./view/view.component";
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import {PaymentComponent} from "./car/main/payment/payment.component";
     AgreementComponent,
     ActComponent,
     CarComponent,
-    PaymentComponent
+    PaymentComponent,
+    Diagram1Component,
+    ReportComponent,
+    ViewViewComponent
 
   ],
   imports: [

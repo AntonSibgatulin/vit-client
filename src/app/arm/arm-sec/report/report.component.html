@@ -1,0 +1,39 @@
+<div class="container">
+
+  <div class="header">
+    <div>
+      Доверенные лица
+    </div>
+
+
+    <div style="font-weight: 400;font-size: 20px">
+      26 декабря 2023 г.
+    </div>
+  </div>
+
+  <table>
+    <thead>
+    <tr>
+
+      <th>Код акта</th>
+      <th>Код авто</th>
+      <th>Авто</th>
+      <th>Доверенное лицо</th>
+      <th>Дата поставки</th>
+      <th>Стоимость авто</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let item of dataForm | async as list" class="item">
+      <td>{{item.act.id}}</td>
+      <td>{{item.car.numberEngine}}</td>
+      <td>{{item.car.model}}</td>
+      <td>{{item.confidant.name + " " + item.confidant.surname}}</td>
+      <td>{{date(item.act.dateTransmission)}}</td>
+      <td>{{item.car.price}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+</div>

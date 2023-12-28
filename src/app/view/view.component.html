@@ -1,0 +1,54 @@
+<div class="container">
+
+  <div class="header">
+    <div>
+      Доверенные лица
+    </div>
+  </div>
+
+  <table>
+    <thead>
+    <tr>
+
+      <th>Код</th>
+      <th>ФИО</th>
+      <th>Номер доверенности</th>
+      <th>Дата доверенности</th>
+      <th>Паспорт</th>
+      <th>Когда выдан</th>
+      <th>Кем выдан</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let item of dataForm | async as list" class="item">
+      <td>{{item.confidant.id}}</td>
+
+      <td>{{item.confidant.name + " " + item.confidant.surname + " " + item.confidant.patronymic}}</td>
+      <td>{{item.confidant.numberConfidant}}</td>
+
+      <td>{{date(item.confidant.confidant)  }}</td>
+
+      <td>{{item.confidant.seriaPassport + " " + item.confidant.numberPassport}}</td>
+      <td>{{date(item.confidant.dataOutput)}}</td>
+      <td>{{item.confidant.whoOutput}}</td>
+
+
+    </tr>
+    </tbody>
+  </table>
+
+  <div style="display: flex;justify-content: end;align-items: center;">
+    <div class="button-blue" style="width: 105px">
+      Главная
+    </div>
+    <div class="button-blue" style="margin-left: 10px">
+      <<
+    </div>
+    <div class="button-blue" style="margin-left: 10px">
+      >>
+    </div>
+  </div>
+</div>
